@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Лаб 15 (1)</title>
+</head>
+<body text="#000000">
+<style type="text/css">
+    .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgb(29, 220, 0);
+        background-image: linear-gradient(to top left,
+        rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, .2) 30%,
+        rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background-color: rgb(0, 187, 255);
+    }
+
+    .styled:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+    span.inlineBlock {
+        display: inline-block;
+        vertical-align: top;
+    }
+    body{
+        background: #266019;
+    }
+    .parent {
+        width: 100%;
+        background-color: #316543;
+    }
+    .child1 {
+        width: 40%;
+        background-color: #66b248;
+    }
+    .child2 {
+        width: 60%;
+        background: linear-gradient(to bottom left, #316543 50%, #1fa850 50%);
+    }
+    .blk {
+        padding: 20px;
+        border: 2px solid #E81E25;
+        margin: 10px;
+    }
+    .layer3 {
+        height: 450px;
+        width: 95%; /* Ширина */
+        padding: 25px; /* Поля */
+        background: #316543; /* Колір фона */
+        border: 5px dashed black; /* Параметри рамки*/
+    }
+    .header1 {
+        height: 100px;
+        background: radial-gradient(#1fa850, #4ca239);
+    }
+    .main {
+        padding: 14px;
+        margin-top: 35px;
+        height: 120px;
+    }
+    .footer {
+        height: 140px;
+        margin-top: 80px;
+        background: linear-gradient(to bottom, #4da21a 0%, #4da21a 100%);
+        text-align: center;
+        font-size: 14px;
+    }
+    /* The side navigation menu */
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #5c8c44;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: #000000;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+        background-color: #1fa850;
+        color: white;
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .sidebar a {
+            float: left;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+    }
+
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+    }
+
+    .rr {
+        font-family: Pompadur, 'Comic Sans MS', cursive;
+    }
+
+    .colortext {
+        color: #64c54f;
+    }
+
+    .colortext1 {
+        color: #4da21a;
+    }
+</style>
+<!-- The sidebar -->
+<div class="sidebar">
+
+    <a class="active" href="index.html">Завдання 1</a>
+    <a href="index4.html">Завдання 2</a>
+    <a href="index2.html">Завдання 3</a>
+    <a href="index3.html">Завдання 4</a>
+</div>
+<!-- Page content -->
+<div class="content">
+    <div class="header1"></div>
+    <div class="main">
+        <h1><span class="colortext">Завдання 1</h1></span>
+        <hr></hr>
+        <p><span class="colortext1"> </span></p>
+    </div>
+    <br><br><br>
+    <h1>
+        <center><script language="JavaScript">
+            document.write("Я Антонюк Тарас Олегович!")
+        </script></center>
+    </h1>
+    <br>
+    <br>
+    <center>
+        <form>
+            <input class="favorite styled" type="button" value="Click me" onClick="alert('24.02.2005')">
+        </form>
+        <br>
+        <br><br>
+        <br>
+        <script language="JavaScript">
+            function myFunction() {
+                document.write("Ласкаво просимо на сторінку Тараса!<br>");
+                document.write("Це JavaScript!<br>");}
+            myFunction();
+            myFunction();
+            myFunction();
+        </script>
+        <br><br>
+        <br><br><br><br><br><br>
+    <div class="footer">
+        <br>
+        <h1>@Taras</h1>
+    </div>
+</div>
+
+</body>
+</html>
